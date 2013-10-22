@@ -39,6 +39,28 @@ class posts_controller extends base_controller {
         echo "Your post has been added. <a href='/posts/add'>Add another</a>";
 
     }
+
+public function index() {
+
+    # Set up the View
+    $this->template->content = View::instance('v_posts_index');
+    $this->template->title   = "Posts";
+
+    # Build the query
+    $q = "SELECT * 
+        FROM posts
+        JOIN users";
+
+    # Run the query
+    $posts = DB::instance(DB_NAME)->select_rows($q);
+
+    # Pass data to the View
+    $this->template->content->posts = $posts;
+
+    # Render the View
+    echo $this->template;
+
+    }
 }
 
 ?>
