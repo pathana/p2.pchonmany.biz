@@ -47,9 +47,12 @@ class posts_controller extends base_controller {
         $this->template->title   = "Posts";
 
         # Build the query
-        $q = "SELECT * 
+        $q = "SELECT 
+                posts.*, 
+                users.first_name, 
+                users.last_name 
             FROM posts
-            JOIN users";
+            INNER JOIN users ON posts.user_id = users.user_id";
 
         # Run the query
         $posts = DB::instance(DB_NAME)->select_rows($q);
