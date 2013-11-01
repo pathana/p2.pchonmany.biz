@@ -78,6 +78,7 @@ body {
 		width: 800px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 5px;
 		padding: 15px;
 		border-radius: 5px;
 }
@@ -128,12 +129,21 @@ b {
 }
 
 
+/*-------IMAGES---------------*/
+
+.picByte {
+		float: right;
+		padding-right: 10px;
+		padding-top: 10px;
+}
+
+
 /*-------INPUT FIELDS---------*/
 
 input {
 		border-width: thin;
 		border-style: solid;
-		padding-right: 30px;
+		padding: 5px;
 }
 
 input:focus {
