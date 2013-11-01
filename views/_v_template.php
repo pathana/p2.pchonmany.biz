@@ -10,28 +10,40 @@
 
     <!-- Controller Specific CSS/JS -->
     <?php if(isset($client_files_head)) echo $client_files_head; ?>
+    <link rel="stylesheet" href="/css/app.css" type="text/css">
 
 </head>
 
 <body>	
 
-	<div id='menu'>
+	<div id="header">
 
-        <a href='/'>Home</a>
+    <ul>
+        <li>
+            <a href='/'>Home</a>
+        </li>
 
-        <!-- Menu for users who are logged in -->
-        <?php if($user): ?>
+            <!-- Menu for users who are logged in -->
+            <?php if($user): ?>
 
-            <a href='/users/logout'>Logout</a>
-            <a href='/users/profile'>Profile</a>
+        <li>
+                <a href='/users/logout'>Logout</a>
+        </li>
+        <li>
+                <a href='/users/profile'>Profile</a>
+        </li>
 
-        <!-- Menu options for users who are not logged in -->
-        <?php else: ?>
+            <!-- Menu options for users who are not logged in -->
+            <?php else: ?>
+            <li>
+                <a href='/users/signup'>Sign up</a>
+            </li>
+            <li>
+                <a href='/users/login'>Log in</a>
+            </li>
 
-            <a href='/users/signup'>Sign up</a>
-            <a href='/users/login'>Log in</a>
-
-        <?php endif; ?>
+            <?php endif; ?>
+    </ul>
 
     </div>
 
