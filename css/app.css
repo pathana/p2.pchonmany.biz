@@ -185,6 +185,7 @@ button.submit {
 	    font-weight: bold;
 	    font-size: 1.2em;
 	    padding: 6px 20px;
+	    width: 120px;
 	    text-align: center;
 	    text-shadow: 0 -1px 0 #104570;
 }
