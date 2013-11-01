@@ -4,13 +4,13 @@
 
     <form method='POST' action='/users/p_login'>
 
-        Email<br>
-        <input type='text' name='email'>
+        Email:<br>
+        <input type='text' name='email' size="30">
 
         <br><br>
 
-        Password<br>
-        <input type='password' name='password'>
+        Password:<br>
+        <input type='password' name='password' size="30">
 
         <br><br>
 
