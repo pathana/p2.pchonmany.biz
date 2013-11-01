@@ -13,7 +13,7 @@ class users_controller extends base_controller {
 
         # Setup view
             $this->template->content = View::instance('v_users_signup');
-            $this->template->title   = "Sign Up";
+            $this->template->title   = "BlogByte : Sign Up";
 
         # Render template
             echo $this->template;

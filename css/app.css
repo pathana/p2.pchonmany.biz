@@ -127,27 +127,26 @@ b {
 		color: #3e7aab;
 }
 
-input.top {
-		margin-right: 50px;
+
+/*-------INPUT FIELDS---------*/
+
+input {
+		border-width: thin;
+		border-style: solid;
+		padding-right: 30px;
+}
+
+input:focus {
+	    background: #FFF;
+	    border: 1px solid blue;
+	    box-shadow: 0 0 4px #333;
 }
 
 fieldset {
 		text-align: center;
 }
 
-select {
-    	border: 0px !important;.
-	}
 
-#schoolTerm {
-		width: 500px;
-		height: 35px;
-		background-color: #3e7aab;
-		color: #FFF;
-		font-weight: bold;
-		font-size: 16px;
-		text-align: center;
-}
 
 
 /*-------SUBMIT BUTTON IN FORM--------*/
