@@ -1,7 +1,9 @@
 <div id="content">
 
     <h1>Sign Up</h1><p>
-    <img src="/images/byte.jpg" class="picByte">
+    <!--<img src="/images/byte.jpg" class="picByte">-->
+
+    <div id="formContent">
 
         <form method='POST' action='/users/p_signup'>
 
@@ -24,5 +26,6 @@
             <button type='submit' class="submit">Sign Up</button>
 
         </form>
-
+        
+    </div>
 </div>

@@ -2,27 +2,30 @@
 
     <h1>Login</h1><p>
 
-    <form method='POST' action='/users/p_login'>
+    <div id="formContent">
 
-        Email:<br>
-        <input type='text' name='email' size="30">
+        <form method='POST' action='/users/p_login'>
 
-        <br><br>
+            Email:<br>
+            <input type='text' name='email' size="30">
 
-        Password:<br>
-        <input type='password' name='password' size="30">
+            <br><br>
 
-        <br><br>
+            Password:<br>
+            <input type='password' name='password' size="30">
 
-        <?php if(isset($error)): ?>
-            <div class='error'>
-                Login failed. Please double check your email and password.
-            </div>
-            <br>
-        <?php endif; ?>
+            <br><br>
 
-        <button type='submit' class="submit">Log In</button>
+            <?php if(isset($error)): ?>
+                <div class='error'>
+                    Login failed. Please double check your email and password.
+                </div>
+                <br>
+            <?php endif; ?>
 
-    </form>
+            <button type='submit' class="submit">Log In</button>
 
+        </form>
+
+    </div>
 </div>
