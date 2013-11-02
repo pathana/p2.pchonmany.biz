@@ -61,6 +61,7 @@ body {
 		line-height: 1.2em;
 		background-color: white;
 		background-image: url('random_grey_variations.png');
+		background-attachment: fixed;
 		margin: 0 auto;
 }
 

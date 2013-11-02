@@ -12,5 +12,5 @@
 	    </time>
 
 	</div>
-
+<br><br>
 <?php endforeach; ?>
