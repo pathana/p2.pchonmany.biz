@@ -1,3 +1,7 @@
+<div id="content">
+
+<div id="usersContent">
+
 <?php foreach($users as $user): ?>
 
     <!-- Print this user's name -->
@@ -15,3 +19,6 @@
     <br><br>
 
 <?php endforeach; ?>
+
+</div>
+</div>

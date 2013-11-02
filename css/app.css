@@ -87,6 +87,12 @@ body {
 		text-align: center;
 }
 
+#usersContent {
+		font-size: 1.2em;
+		font-weight: bold;
+		line-height: 1.7em;
+}
+
 ul {
 	    width: 800px;
 	    list-style-type: none;
@@ -126,10 +132,26 @@ h1 {
 		border-radius: 1px;
 }
 
+h2 {
+		color: #000;
+		line-height: 2em;
+		font-size: 1.5em;
+		font-weight: bold;
+		border-bottom: 1px dotted #999;
+		background-color: #CCC;
+		padding-left: 8px;
+		margin-bottom: 15px;
+		border-radius: 1px;
+}
+
 b {
 		font-weight: bold;
 		font-size: 1.2em;
 		color: #3e7aab;
+}
+
+time {
+		font-style: italic;
 }
 
 
