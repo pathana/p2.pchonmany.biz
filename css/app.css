@@ -60,7 +60,7 @@ body {
 		font-size: 0.90em;
 		line-height: 1.2em;
 		background-color: white;
-		background-image: url('random_grey_variations.png');
+		background-image: url('http://p2.pchonmany.biz/images/random_grey_variations.png');
 		background-attachment: fixed;
 		margin: 0 auto;
 }
@@ -79,6 +79,7 @@ body {
 		width: 800px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 30px;
 		padding: 15px;
 		padding-bottom: 20px;
 		border-radius: 5px;
@@ -108,7 +109,7 @@ li {
 	    margin-bottom: 15px;
 }
 
-li a:link, a:visited, a:active {
+li a:link, li a:visited, li a:active {
 		font-size: 1em;
 		font-weight: bold;
 		color: white;
@@ -118,6 +119,17 @@ li a:link, a:visited, a:active {
 
 li a:hover {
 		color: #a4b7d6;
+}
+
+a:link, a:visited, a:active {
+		font-weight: bold;
+		color: #999;
+		text-decoration: none;
+}
+
+a:hover {
+		color: #4d607f;
+		text-decoration: line-through;
 }
 
 h1 {
