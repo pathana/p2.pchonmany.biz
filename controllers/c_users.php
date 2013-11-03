@@ -36,7 +36,12 @@ class users_controller extends base_controller {
 
         # For now, just confirm they've signed up - 
         # You should eventually make a proper View for this
-            echo 'You\'re signed up!';
+            print '<script type="text/javascript">'; 
+            print 'alert("You\'re signed up!")'; 
+            print '</script>';
+
+            echo "<a href='/users/login'>Click here to login</a>.";
+
 
             #$this->template->content = View::instance('v_users_registered');
 

@@ -1,7 +1,17 @@
-<div id="content">
+<div id="indexContent">
 	<h1><?=APP_NAME?><?php if($user) echo ' : Welcome, '.$user->first_name; ?></h1>
 	<p>
-	Morbi a neque sit amet leo tincidunt ullamcorper sed ultricies neque. Sed odio erat, blandit sed metus vel, ullamcorper aliquet mi. Integer vitae nibh pretium, mollis libero eget, vehicula arcu. Donec ornare dui vitae tincidunt luctus. Mauris mi eros, consectetur id dui in, sollicitudin consequat metus. Nam feugiat libero vel tortor malesuada tincidunt. In hac habitasse platea dictumst. Sed fermentum nulla a nibh laoreet vulputate. Suspendisse potenti. Donec nec turpis cursus, faucibus sapien nec, ornare nulla. Duis pellentesque turpis id feugiat pharetra. In sodales orci ut sollicitudin sollicitudin. Nulla ac auctor mauris.
+		<img src="/images/byte.jpg" class="picByte">
+			Welcome to BlogByte, the one and only microblog that is rapidly growing in user preference of the best microblog to use on the web today. A quick and easy, less than 30 second sign up and you'll be on your way. Our microblog includes adding new posts, following and/or unfollowing other users in BlogByte, seeing all of the posts of the user(s) you're following, 
+		<br><br>
+		<hr>
+		<br>
+			+1 Feature - <br>
+			+1 Feature -
+
+		<div id="footer">
+			BlogByte Created by Pathana Chonmany for P2 DWA15
+		</div>
 </div>
 
 

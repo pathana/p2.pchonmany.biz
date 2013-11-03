@@ -85,6 +85,19 @@ body {
 		border-radius: 5px;
 }
 
+#indexContent {
+		background-color: #FFF;
+		border: 1px solid #666;
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+		padding: 15px;
+		padding-bottom: 20px;
+		border-radius: 5px;
+		text-align: justify;
+}
+
 #formContent {
 		text-align: center;
 }
@@ -167,13 +180,26 @@ time {
 		font-style: italic;
 }
 
+hr {
+		background-color: #dde5f2;
+		height: 1px;
+		opacity:0.3;
+		filter:alpha(opacity=30);
+}
+
+#footer {
+		padding-top: 50px;
+		font-size: 0.8em;
+		color: #999;
+}
+
 
 /*-------IMAGES---------------*/
 
 .picByte {
 		float: right;
-		padding-right: 10px;
-		padding-top: 10px;
+		padding-left: 30px;
+		padding-bottom: 12px;
 }
 
 
