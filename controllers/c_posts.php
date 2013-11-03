@@ -15,7 +15,7 @@ class posts_controller extends base_controller {
 
         # Setup view
         $this->template->content = View::instance('v_posts_add');
-        $this->template->title   = "New Post";
+        $this->template->title   = "BlogByte : New Post";
 
         # Render template
         echo $this->template;
@@ -44,7 +44,7 @@ class posts_controller extends base_controller {
 
     # Set up the View
     $this->template->content = View::instance('v_posts_index');
-    $this->template->title   = "All Posts";
+    $this->template->title   = "BlogByte : All Posts";
 
     # Query
     $q = 'SELECT 
@@ -75,7 +75,7 @@ class posts_controller extends base_controller {
 
         # Set up the View
         $this->template->content = View::instance("v_posts_users");
-        $this->template->title   = "Users";
+        $this->template->title   = "BlogByte : Users";
 
         # Build the query to get all the users
         $q = "SELECT *
