@@ -205,7 +205,7 @@ hr {
 
 /*-------INPUT FIELDS---------*/
 
-input {
+input, textarea {
 		border-width: thin;
 		border-style: solid;
 		padding: 5px;
@@ -219,6 +219,13 @@ input:focus {
 
 fieldset {
 		text-align: center;
+}
+
+textarea {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
 }
 
 
