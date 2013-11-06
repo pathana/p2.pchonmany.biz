@@ -7,7 +7,8 @@
 		<hr>
 		<br>
 			+1 Feature - Display and edit user profile information<br>
-			+1 Feature - Social media buttons on posts (Google+, Facebook, Twitter, Reddit)
+			+1 Feature - Social media buttons on posts (Google+, Facebook, Twitter, Reddit)<br>
+			+1 Feature - HTML5 Validation
 
 		<div id="footer">
 			BlogByte Created by Pathana Chonmany for P2 DWA15
