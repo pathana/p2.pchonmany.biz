@@ -18,6 +18,7 @@
 			<label>Email:</label><br>
 			<?php $info = $user->email; ?>
 			<input type="text" name="email" size="30" value="<?php echo $info; ?>"><br><br>
+		
 		<br/>
 
 	        <button type="submit" class="submit">Update</button>

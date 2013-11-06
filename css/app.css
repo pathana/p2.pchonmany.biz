@@ -236,7 +236,7 @@ input, textarea {
 		padding: 5px;
 }
 
-input:focus {
+input:focus, textarea:focus {
 	    background: #FFF;
 	    border: 1px solid blue;
 	    box-shadow: 0 0 4px #333;
