@@ -135,6 +135,14 @@ class posts_controller extends base_controller {
 
     }
 
+    public function delete($table, $where_condition) {
+
+        $sql = 'DELETE FROM '.$table.' '.$where_condition; 
+
+        return $this->query($sql);
+
+    }
+
 }
 
 ?>

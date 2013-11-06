@@ -2,7 +2,7 @@
 
     <h1>Profile of <?=$user->first_name?></h1>
 
-    <form action="/users/edit">
+    <form method="POST" action="/users/edit">
 
         <b>User ID:</b> <?=$user->user_id?><br>
         <b>First Name:</b> <?=$user->first_name?><br>
@@ -12,4 +12,3 @@
     <button type="submit" class="submit2">Edit Information</button>
 
 </div>
-

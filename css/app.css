@@ -65,6 +65,7 @@ body {
 		margin: 0 auto;
 }
 
+/*Navigation*/
 #header {
 		background-color: black;
 		margin: 0 auto;
@@ -73,6 +74,7 @@ body {
 		height: 45px !important;
 }
 
+/*Main content*/
 #content {
 		background-color: #FFF;
 		border: 1px solid #666;
@@ -85,6 +87,7 @@ body {
 		border-radius: 5px;
 }
 
+/*Index page content*/
 #indexContent {
 		background-color: #FFF;
 		border: 1px solid #666;
@@ -98,16 +101,19 @@ body {
 		text-align: justify;
 }
 
+/*Display for forms*/
 #formContent {
 		text-align: center;
 }
 
+/*Display for 'all users' page*/
 #usersContent {
 		font-size: 1.2em;
 		font-weight: bold;
 		line-height: 1.7em;
 }
 
+/*Display for user profile page*/
 #profileContent {
 		background-color: #FFF;
 		border: 1px solid #666;
@@ -121,6 +127,7 @@ body {
 		line-height: 3em;
 }
 
+/*Main navigation*/
 ul {
 	    width: 800px;
 	    list-style-type: none;
@@ -158,6 +165,7 @@ a:hover {
 		text-decoration: line-through;
 }
 
+/*Header tags*/
 h1 {
 		color: #000;
 		line-height: 2.5em;
@@ -183,16 +191,19 @@ h2 {
 		border-radius: 1px;
 }
 
+/*Bold*/
 b {
 		font-weight: bold;
 		font-size: 1.2em;
 		color: #3e7aab;
 }
 
+/*Time displayed on posts*/
 time {
 		font-style: italic;
 }
 
+/*Horizontal line on index page*/
 hr {
 		background-color: #dde5f2;
 		height: 1px;
@@ -200,6 +211,7 @@ hr {
 		filter:alpha(opacity=30);
 }
 
+/*Footer on index page*/
 #footer {
 		padding-top: 50px;
 		font-size: 0.8em;

@@ -108,37 +108,76 @@ class users_controller extends base_controller {
 
     public function logout() {
 
-    # Generate and save a new token for next login
-        $new_token = sha1(TOKEN_SALT.$this->user->email.Utils::generate_random_string());
+        # Generate and save a new token for next login
+            $new_token = sha1(TOKEN_SALT.$this->user->email.Utils::generate_random_string());
 
-    # Create the data array we'll use with the update method
-    # In this case, we're only updating one field, so our array only has one entry
-        $data = Array("token" => $new_token);
+        # Create the data array we'll use with the update method
+        # In this case, we're only updating one field, so our array only has one entry
+            $data = Array("token" => $new_token);
 
-    # Do the update
-        DB::instance(DB_NAME)->update("users", $data, "WHERE token = '".$this->user->token."'");
+        # Do the update
+            DB::instance(DB_NAME)->update("users", $data, "WHERE token = '".$this->user->token."'");
 
-    # Delete their token cookie by setting it to a date in the past - effectively logging them out
-        setcookie("token", "", strtotime('-1 year'), '/');
+        # Delete their token cookie by setting it to a date in the past - effectively logging them out
+            setcookie("token", "", strtotime('-1 year'), '/');
 
-    # Send them back to the main index.
-        Router::redirect("/");
+        # Send them back to the main index.
+            Router::redirect("/");
     }
 
     public function profile() {
 
-    # If user is blank, they're not logged in; redirect them to the login page
-        if(!$this->user) {
+        # If user is blank, they're not logged in; redirect them to the login page
+            if(!$this->user) {
+                Router::redirect('/users/login');
+        }
+
+        # If they weren't redirected away, continue:
+
+        # Setup view
+            $this->template->content = View::instance('v_users_profile');
+            $this->template->title   = "BlogByte : Profile of ".$this->user->first_name;
+
+        # Render template
+            echo $this->template;
+    }
+
+    public function edit() {
+
+        # If user is blank, they're not logged in; redirect them to the login page
+        if(!$this->user) 
             Router::redirect('/users/login');
+
+        else{
+            # Setup view
+            $this->template->content = View::instance('v_users_edit');
+            $this->template->title   = "BlogByte : Update Your Profile";
+
+            # Render template
+            echo $this->template;   
+    }    
+}
+
+
+    public function p_edit() {
+
+        # Sanitize the user entered data
+        $_POST = DB::instance(DB_NAME)->sanitize($_POST);
+
+        $data = Array(
+            "first_name" => $_POST['first_name'],
+            "last_name"  => $_POST['last_name'],
+            "email"      => $_POST['email'],
+            "modified"   => Time::now()
+            );
+
+        DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = ".$this->user->user_id);
+
+
+        # Redirect to user's profile
+        Router::redirect('/users/profile');
+
     }
 
-    # If they weren't redirected away, continue:
 
-    # Setup view
-        $this->template->content = View::instance('v_users_profile');
-        $this->template->title   = "BlogByte : Profile of ".$this->user->first_name;
-
-    # Render template
-        echo $this->template;
-    }
 }
