@@ -274,6 +274,36 @@ button.submit {
 	    text-align: center;
 	    text-shadow: 0 -1px 0 #104570;
 }
+
+button.submit2 {
+	    background-color: #4688be;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#4688be), to(#396f9b));
+	    background: -webkit-linear-gradient(top, #4688be, #396f9b);
+	    background: -moz-linear-gradient(top, #4688be, #396f9b);
+	    background: -ms-linear-gradient(top, #4688be, #396f9b);
+	    background: -o-linear-gradient(top, #4688be, #396f9b);
+	    background: linear-gradient(top, #4688be, #396f9b);
+	    border: 1px solid #33658e;
+	    border-bottom: 1px solid #2d6da1;
+	    border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	    -o-border-radius: 3px;
+	    box-shadow: inset 0 1px 0 0 #bad3e8;
+	    -webkit-box-shadow: 0 1px 0 0 #bad3e8 inset ;
+	    -moz-box-shadow: 0 1px 0 0 #bad3e8 inset;
+	    -ms-box-shadow: 0 1px 0 0 #bad3e8 inset;
+	    -o-box-shadow: 0 1px 0 0 #bad3e8 inset;
+	    color: white;
+	    font-weight: bold;
+	    font-size: 1.2em;
+	    padding: 6px 20px;
+	    width: 170px;
+	    text-align: center;
+	    text-shadow: 0 -1px 0 #104570;
+}
+
 button.submit:hover {
 	    opacity:.85;
 	    cursor: pointer;

@@ -1,7 +1,6 @@
 <div id="content">
 
     <h1>Sign Up</h1><p>
-    <!--<img src="/images/byte.jpg" class="picByte">-->
 
     <div id="formContent">
 
